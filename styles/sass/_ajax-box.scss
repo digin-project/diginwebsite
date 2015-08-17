@@ -24,6 +24,11 @@
         z-index: 8888;
         top: .75rem;
         left: .75rem;
+        background-color: $uiorange;
+
+        i {
+            color: $white !important;
+        }
     }
 
     .padding-text {

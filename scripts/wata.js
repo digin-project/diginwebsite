@@ -177,12 +177,20 @@ $(document).ready(function() {
     });
 
     (function() {
-        if(window.location.hash.length > 2 && window.location.hash !== "#" && window.location.hash !== "#/") {
-            var hash = window.location.hash.substr(2);
-            setTimeout(function() {
-                $('a.ajax-link#' + hash).trigger('click');
-            }, 1);
+        function jsRouting() {
+            if(window.location.hash.length > 2 && window.location.hash !== "#" && window.location.hash !== "#/") {
+                var hash = window.location.hash.substr(2);
+                setTimeout(function() {
+                    $('a.ajax-link#' + hash).trigger('click');
+                }, 1);
+            }
         }
+
+        $(window).on('hashchange', function() {
+            jsRouting();
+        });
+
+        jsRouting();
 
         var scrollPosition,
             wrapper = $('#wrapper'),
