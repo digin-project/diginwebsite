@@ -146,7 +146,10 @@ nav {
     position: absolute;
     z-index: 8888;
     top: .75rem;
-    left: .75rem; }
+    left: .75rem;
+    background-color: #18bab1 !important; }
+    #ajax-box #close-ajax i {
+      color: white !important; }
   #ajax-box .padding-text {
     padding: 1rem; }
   #ajax-box h1 {
@@ -316,7 +319,8 @@ a {
     cursor: pointer; }
 
 .responsive-img {
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 .container {
   max-width: 1700px;
@@ -337,7 +341,7 @@ a {
   .section.grey-section {
     background: #f2f2f2; }
     .section.grey-section a.waves-effect {
-      background-color: #FF9800 !important;
+      background-color: #18bab1 !important;
       color: white !important; }
 
 h2 {
@@ -417,7 +421,7 @@ blockquote {
     bottom: 15px;
     left: 50%;
     margin-left: -27.75px;
-    background-color: #FF9800 !important; }
+    background-color: #18bab1 !important; }
     #triangles #explore i {
       color: white !important; }
 
@@ -489,6 +493,10 @@ blockquote {
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 3px; }
+
+.fa-external-link {
+  margin-left: 10px;
+  font-size: 20px; }
 
 /***********************************************************************************************************************
 /*
