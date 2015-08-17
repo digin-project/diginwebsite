@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Hide the browser UI -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- MS tile icons -->
+    <meta name="msapplication-TileColor" content="#69f0ae">
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+
+    <!-- Android toolbar color -->
+    <meta name="theme-color" content="#69f0ae">
+
+    <!-- Apple touch icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+
+    <!-- Android touch icons -->
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+
+    <!-- Web app manifest file -->
+    <link rel="manifest" href="favicons/manifest.json">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/wata.min.css">
+
+    
+
+    <!-- Site title -->
+    <title>Digin - Agence Web et Webmarketing à Bordeaux, développement web, mobile et référencement naturel</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- preloader -->
+        <div id="preloader" class="valign-wrapper">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only actually-black">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- status spinner -->
+        <div id="status">
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-blue-only actually-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="navbar-fixed" id="nav">
+            <nav>
+                <div class="nav-wrapper">
+
+                    <!-- Site name -->
+                    <a href="/" class="brand-logo">Digin</a>
+
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents">
+                        <li><a href="#triangles">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#works">Références</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#triangles">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#works">Références</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Triangles section -->
+        <div id="triangles" class="scrollspy">
+            <div id="output">
+                <div class="h1-wrapper valign-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <h1>Agence Web (im)pertinente</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Action button -->
+                    <a class="btn-floating btn-large waves-effect waves-dark green accent-2" id="explore">
+                        <i class="mdi-navigation-arrow-forward indigo-text text-darken-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services section -->
+        <div class="section scrollspy" id="services">
+            <div class="container">
+                <div class="row">
+                    <h2>Notre adn</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Une agence Web réactive, consciencieuse et efficiente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Row with service icons -->
+                <div class="row services">
+                    <div class="col s12 l3">
+                        <i class="material-icons md-48" style="color:#318be1">code</i>
+                        <div class="divider"></div>
+                        <h5>Développement Web & mobile</h5>
+                        <p>Création de site vitrine, développement sur mesure, conception d'application mobile, nous répondons à tous vos besoins en développement web et mobile avec les dernières technologies et des règles d'optimisation SEO.</p>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="material-icons md-48" style="color:#318be1">stars</i>
+                        <div class="divider"></div>
+                        <h5>Référencement naturel (SEO)</h5>
+                        <p>Qu'il s'agisse de seo on-site ou off-site (netlinking), nous mettons au point ensemble une stratégie gagnante avec des <b>résultats mesurables</b>. Nous avons toujours atteint et surpassé les objectifs établis en référencement naturel.</p>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="material-icons md-48" style="color:#318be1">school</i>
+                        <div class="divider"></div>
+                        <h5>Formation webmarketing</h5>
+                        <p>Nous offrons 2 types de formations Webmarketing et Social Media : Google <b>AdWords</b> niveau débutant ou avancé, et la formation Community Management avec <b>Facebook</b>. Nos formations sont admissibles à une prise en charge OPCA / DIF. </p>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="material-icons md-48" style="color:#318be1">trending_up</i>
+                        <div class="divider"></div>
+                        <h5>Stratégie webmarketing</h5>
+                        <p>Une présence Web réussie nécessite des objectifs et une stratégie adaptée. Nous connaissons les recettes qui fonctionnent de par nos <b>15 ans d'expérience</b> dans le Web, et les résultats que nous obtenons pour nos clients parlent d'eux mêmes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Works section -->
+        <div class="section scrollspy" id="works">
+            <div class="container">
+                <div class="row">
+                    <h2>Quelques projets récents</h2>
+                </div>
+            </div>
+            <div class="wide-container">
+                <!-- Shuffle grid -->
+                <div id="shuffle-grid" class="row">
+                    <a href="ajax/works/trampolinepark.html" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                        <img src="images/works/trampolinepark_cover.png" class="responsive-img" alt="Webmarketing pour Trampoline Park à Bordeaux">
+                        <h5>Webmarketing Trampoline Park</h5>
+                    </a>
+                    <a href="ajax/works/cnrs.html" class="col s12 m6 l4 picture-item ajax-link" data-groups='["material"]'>
+                        <img src="images/works/cnrs.jpg" class="responsive-img" alt="client CNRS">
+                        <h5>Webdesign CNRS</h5>
+                    </a>
+                    <a href="ajax/works/gnubila.html" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                        <img src="images/works/gnubila.jpg" class="responsive-img" alt="Site Web Gnubila">
+                        <h5>Site Web Gnubila</h5>
+                    </a>
+                    <a href="ajax/works/youkka.html" class="col s12 m6 l4 picture-item ajax-link" data-groups='["food"]'>
+                        <img src="images/works/youkka.jpg" class="responsive-img" alt="Site Internet du réseau social Youkka">
+                        <h5>Réseau Social Youkka</h5>
+                    </a>
+                    <a href="ajax/works/maiandra.html" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                        <img src="images/works/maiandra.jpg" class="responsive-img" alt="Identité et communication Web pour Salon de coiffure Maïandra">
+                        <h5>Identité Maïandra</h5>
+                    </a>
+                    <a href="ajax/works/paarkin.html" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                        <img src="images/works/paarkin.png" class="responsive-img" alt="Conception et développement de l'application mobile Paarkin">
+                        <h5>Application Paarkin</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Get started section -->
+        <div class="section grey-section" id="get-started">
+            <div class="container">
+                <div class="row">
+                    <h2>Impertinente ?</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Nous rejetons le status quo et cherchons toujours de meilleures solutions quitte à les créer nous même. C'est ainsi que nous expérimentons toutes sortes de projets et créons nos propres applications web et mobile au travers de notre <a href="ajax/pages/digin-lab.html" class="ajax-link">lab</a>.
+                        </p>
+                        <p class="center-align">
+                            <a href="ajax/pages/digin-lab.html" class="waves-effect waves-light btn-large green accent-2 indigo-text text-darken-4 ajax-link">
+                                <i class="fa fa-flask left"></i>Découvrir nos projets
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Contact form section -->
+        <div class="section scrollspy" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2>Nous contacter</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Parlez-nous de votre projet ou passez nous le bonjour. Vos messages nous font toujours plaisir.
+                        </p>                       
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
+                        <!-- This field helps us avoid spam bots, don't remove it -->
+                        <div class="cant-touch-this">
+                            <input type="text" name="hammertime" tabindex="-1" value="">
+                        </div>
+                        <!-- End of anti-spam field -->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first-name" name="first-name" type="text" class="required">
+                                <label for="first-name">Prénom</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last-name" name="last-name" type="text">
+                                <label for="last-name">Nom</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="required">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea required"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button type="submit" name="send" class="btn-large disabled">
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wide-container">
+                <div class="row">
+                    <div class="col s12">
+                        <!-- Google map container -->
+                        <div id="map-canvas" class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container contact-details">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <h5>Bureaux</h5>
+                        <div class="divider"></div>
+                        <address>
+                            <a href="http://www.darwin-ecosysteme.fr/" target="_blank">Espace Darwin</a> / <a href="http://bxno.de/" target="_blank">Le Node</a><br>
+                            Bordeaux<br>
+                        </address>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <h5>Nous joindre</h5>
+                        <div class="divider"></div>
+                        <p>
+                            +33 9 84 29 94 71<br>
+                            <a href="mailto:contact@digin.fr">contact@digin.fr</a>
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l4 modern-connect">
+                        <h5>Se connecter</h5>
+                        <div class="divider"></div>
+                        <p>
+                            <!-- Add your Skype link here -->
+                            <a href="skype:freekers"><i class="fa fa-skype"></i> digin.skype</a><br>
+                            <a href="https://www.facebook.com/digin.agenceweb"><i class="fa fa-facebook"></i> facebook</a><br>
+                            <a href="https://twitter.com/agencedigin"><i class="fa fa-twitter"></i> twitter</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2015 Digin | <a href="ajax/pages/mentions-legales.html" class="ajax-link">Mentions légales</a>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Ajax box container, waiting for its turn -->
+    <div id="ajax-box" class="translate"></div>
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/build.js"></script>
+</body>
+</html>
