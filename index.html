@@ -44,10 +44,8 @@
 
     <link rel="manifest" href="favicons/manifest.json">
 
-    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/wata.min.css">
+    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css" media="all">
+    <link rel="stylesheet" href="styles/css/wata.min.css" media="all">
 </head>
 <body>
     <div id="wrapper">
@@ -362,5 +360,18 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="scripts/config.js"></script>
     <script src="scripts/build.js"></script>
+    <script type="text/javascript">
+        var stylesheets = [
+            "libs/font-awesome/css/font-awesome.min.css",
+            "https://fonts.googleapis.com/icon?family=Material+Icons"
+        ];
+        for(var s = 0; s < stylesheets.length; s++) {
+            var stylesheet = document.createElement('link');
+            stylesheet.href = stylesheets[s];
+            stylesheet.rel = 'stylesheet';
+            stylesheet.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        }
+    </script>
 </body>
 </html>
