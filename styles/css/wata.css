@@ -491,9 +491,12 @@ blockquote {
 .picture-item {
   margin-bottom: 1rem;
   top: 100px !important;
-  opacity: 1 !important; }
+  -webkit-transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+  -moz-transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+  transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1) !important; }
   .picture-item.animate {
-    top: 0 !important; }
+    top: 0 !important;
+    opacity: 1 !important; }
   .picture-item h5 {
     text-transform: uppercase;
     font-size: 18px;

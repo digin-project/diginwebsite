@@ -20,10 +20,11 @@
 .picture-item {
     margin-bottom: 1rem;
     top: 100px !important;
-    opacity: 1 !important;
+    @include transition(all 250ms $ease-out-circ !important);
 
     &.animate {
         top: 0 !important;
+        opacity: 1 !important;
     }
 
     h5 {
