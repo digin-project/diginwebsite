@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Character set configuration -->
     <meta charset="UTF-8">
-
-    <!-- Viewport configuration, scaling options -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Hide the browser UI -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <!-- MS tile icons -->
     <meta name="msapplication-TileColor" content="#69f0ae">
     <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#318be1">
+    <title>Digin - Agence Web et Webmarketing à Bordeaux, développement web, mobile et référencement naturel</title>
 
-    <!-- Android toolbar color -->
-    <meta name="theme-color" content="#69f0ae">
-
-    <!-- Apple touch icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
@@ -28,25 +19,17 @@
     <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
 
-    <!-- Android touch icons -->
     <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
 
-    <!-- Web app manifest file -->
     <link rel="manifest" href="favicons/manifest.json">
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/wata.min.css">
-
-
-
-    <!-- Site title -->
-    <title>Digin - Agence Web et Webmarketing à Bordeaux, développement web, mobile et référencement naturel</title>
 </head>
 <body>
     <div id="wrapper">
@@ -86,34 +69,28 @@
         </div>
 
         <!-- Navigation bar -->
-        <div class="navbar-fixed" id="nav">
+        <header class="navbar-fixed" id="nav">
             <nav>
                 <div class="nav-wrapper">
+                    <a href="/" alt="Digin" title="Digin" class="brand-logo">Digin</a>
+                    <a href="#" alt="Menu mobile" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
-                    <!-- Site name -->
-                    <a href="/" class="brand-logo">Digin</a>
-
-                    <!-- Mobile menu button -->
-                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-
-                    <!-- Static menu -->
                     <ul class="right hide-on-med-and-down table-of-contents">
-                        <li><a href="#triangles">Accueil</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Références</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#triangles" alt="Accueil" title="Accueil">Accueil</a></li>
+                        <li><a href="#services" alt="Services" title="Services">Services</a></li>
+                        <li><a href="#works" alt="Références" title="Références">Références</a></li>
+                        <li><a href="#contact" alt="Contact" title="Contact">Contact</a></li>
                     </ul>
 
-                    <!-- Mobile menu, make sure it is equal to the statis menu -->
                     <ul class="side-nav" id="mobile-menu">
-                        <li><a href="#triangles">Accueil</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Références</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#triangles" alt="Accueil" title="Accueil">Accueil</a></li>
+                        <li><a href="#services" alt="Services" title="Services">Services</a></li>
+                        <li><a href="#works" alt="Références" title="Références">Références</a></li>
+                        <li><a href="#contact" alt="Contact" title="Contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-        </div>
+        </header>
 
         <!-- Triangles section -->
         <div id="triangles" class="scrollspy">
@@ -126,7 +103,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Action button -->
                     <a class="btn-floating btn-large waves-effect waves-dark green accent-2" id="explore">
                         <i class="mdi-navigation-arrow-forward indigo-text text-darken-4"></i>
                     </a>
@@ -135,7 +111,7 @@
         </div>
 
         <!-- Services section -->
-        <div class="section scrollspy" id="services">
+        <section class="section scrollspy" id="services">
             <div class="container">
                 <div class="row">
                     <h2>Notre adn</h2>
@@ -174,65 +150,65 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="container">
             <div class="divider"></div>
         </div>
 
         <!-- Works section -->
-        <div class="section scrollspy" id="works">
+        <section class="section scrollspy" id="works">
             <div class="container">
                 <div class="row">
                     <h2>Quelques projets récents</h2>
                 </div>
             </div>
-            <div class="wide-container">
+            <div class="wide-container container">
                 <!-- Shuffle grid -->
                 <div id="shuffle-grid" class="row">
-                    <a href="ajax/works/trampolinepark.html" id="trampolinepark" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/trampolinepark.html" alt="Trampoline Park" title="Trampoline Park" id="trampolinepark" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/trampolinepark_cover.png" class="responsive-img" alt="Webmarketing pour Trampoline Park à Bordeaux">
                         <h5>Webmarketing Trampoline Park</h5>
                     </a>
-                    <a href="ajax/works/cnrs.html" id="cnrs" class="col s12 m6 l4 picture-item ajax-link" data-groups='["material"]'>
+                    <a href="ajax/works/cnrs.html" id="cnrs" alt="CNRS" title="CNRS" class="col s12 m6 l4 picture-item ajax-link" data-groups='["material"]'>
                         <img src="images/works/cnrs.jpg" class="responsive-img" alt="client CNRS">
                         <h5>Webdesign CNRS</h5>
                     </a>
-                    <a href="ajax/works/paarkin.html" id="paarkin" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/paarkin.html" id="paarkin" alt="Paarkin" title="Paarkin" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/paarkin.png" class="responsive-img" alt="Conception et développement de l'application mobile Paarkin">
                         <h5>Application mobile Paarkin</h5>
                     </a>
-                    <a href="ajax/works/youkka.html" id="youkka" class="col s12 m6 l4 picture-item ajax-link" data-groups='["food"]'>
+                    <a href="ajax/works/youkka.html" id="youkka" alt="Youkka" title="Youkka" class="col s12 m6 l4 picture-item ajax-link" data-groups='["food"]'>
                         <img src="images/works/youkka.jpg" class="responsive-img" alt="Site Internet du réseau social Youkka">
                         <h5>Réseau Social Youkka</h5>
                     </a>
-                    <a href="ajax/works/tourduhautmoulin.html" id="tourduhautmoulin" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/tourduhautmoulin.html" id="tourduhautmoulin" alt="Tour du Haut Moulin" title="Tour du Haut Moulin" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/tourduhautmoulin.jpg" class="responsive-img" alt="Création site Web e-commerce Prestashop Chateau Tour du Haut Moulin">
                         <h5>E-commerce Haut Moulin</h5>
                     </a>
-                    <a href="ajax/works/maiandra.html" id="mariandra" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/maiandra.html" id="mariandra" alt="Maiandra" title="Maiandra" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/maiandra.jpg" class="responsive-img" alt="Identité et communication Web pour Salon de coiffure Maïandra">
                         <h5>Identité Maïandra</h5>
                     </a>
-                    <a href="ajax/works/brosseau.html" id="brosseau" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/brosseau.html" id="brosseau" alt="Brosseau" title="Brosseau" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/brosseau2.png" class="responsive-img" alt="Site Web et référencement naturel (SEO)">
                         <h5>Référencement brosseau.ca</h5>
                     </a>
-                    <a href="ajax/works/gnubila.html" id="gnubila" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/gnubila.html" id="gnubila" alt="Gnubila" title="Gnubila" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/gnubila.jpg" class="responsive-img" alt="Site Web Gnubila">
                         <h5>Site Web gnubila.fr</h5>
                     </a>
-                    <a href="ajax/works/cfm.html" id="cfm" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
+                    <a href="ajax/works/cfm.html" id="cfm" alt="CFM" title="CFM" class="col s12 m6 l4 picture-item ajax-link" data-groups='["digital"]'>
                         <img src="images/works/cfm.jpg" class="responsive-img" alt="Site Web mobile et SEO pour le CFM">
                         <h5>Mobile & SEO cfm33.com</h5>
                     </a>
-                    
+
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Get started section -->
-        <div class="section grey-section" id="get-started">
+        <section class="section grey-section" id="get-started">
             <div class="container">
                 <div class="row">
                     <h2>Impertinente ?</h2>
@@ -241,29 +217,25 @@
                             Nous rejetons le status quo et cherchons toujours de meilleures solutions quitte à les créer nous même. C'est ainsi que nous expérimentons toutes sortes de projets et créons nos propres applications web et mobile au travers de notre <a href="ajax/pages/digin-lab.html" id="digin-lab" class="ajax-link">lab</a>.
                         </p>
                         <p class="center-align">
-                            <a href="ajax/pages/digin-lab.html" id="digin-lab" class="waves-effect waves-light btn-large green accent-2 indigo-text text-darken-4 ajax-link">
+                            <a href="ajax/pages/digin-lab.html" id="digin-lab" alt="Notre lab" title="Notre lab" class="waves-effect waves-light btn-large green accent-2 indigo-text text-darken-4 ajax-link">
                                 <i class="fa fa-flask left"></i>Découvrir nos projets
                             </a>
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-
-
+        </section>
 
         <div class="container">
             <div class="divider"></div>
         </div>
-
-
 
         <div class="container">
             <div class="divider"></div>
         </div>
 
         <!-- Contact form section -->
-        <div class="section scrollspy" id="contact">
+        <section class="section scrollspy" id="contact">
             <div class="container">
                 <div class="row">
                     <h2>Nous contacter</h2>
@@ -333,39 +305,35 @@
                         <div class="divider"></div>
                         <p>
                             +33 9 84 29 94 71<br>
-                            <a href="mailto:contact@digin.fr">contact@digin.fr</a>
+                            <a href="mailto:contact@digin.fr" alt="Notre adresse email" title="Notre adresse email">contact@digin.fr</a>
                         </p>
                     </div>
                     <div class="col s12 m6 l4 modern-connect">
                         <h5>Se connecter</h5>
                         <div class="divider"></div>
                         <p>
-                            <!-- Add your Skype link here -->
-                            <a href="skype:freekers"><i class="fa fa-skype"></i> digin.skype</a><br>
-                            <a href="https://www.facebook.com/digin.agenceweb"><i class="fa fa-facebook"></i> facebook</a><br>
-                            <a href="https://twitter.com/agencedigin"><i class="fa fa-twitter"></i> twitter</a>
+                            <a href="skype:freekers" alt="Notre Skype" title="Notre Skype"><i class="fa fa-skype"></i> digin.skype</a><br>
+                            <a href="https://www.facebook.com/digin.agenceweb" alt="Notre Facebook" title="Notre Facebook"><i class="fa fa-facebook"></i> facebook</a><br>
+                            <a href="https://twitter.com/agencedigin" alt="Notre Twitter" title="Notre Twitter"><i class="fa fa-twitter"></i> twitter</a>
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer section -->
         <footer class="page-footer">
             <div class="footer-copyright">
                 <div class="container">
-                    © 2015 Digin | <a href="ajax/pages/mentions-legales.html" class="ajax-link">Mentions légales</a>
-
+                    © 2015 Digin | <a href="ajax/pages/mentions-legales.html" alt="Mentions légales" title="Mentions légales" class="ajax-link">Mentions légales</a>
                 </div>
             </div>
         </footer>
 
     </div>
 
-    <!-- Ajax box container, waiting for its turn -->
     <div id="ajax-box" class="translate"></div>
 
-    <!-- Scripts -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="scripts/config.js"></script>
     <script src="scripts/build.js"></script>

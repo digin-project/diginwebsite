@@ -43,7 +43,7 @@ a {
     padding-bottom: 3rem;
 
     &.grey-section {
-        background: $extra-light-gray;
+        background: $extra-light-gray !important;
 
         a.waves-effect {
             background-color: $uiorange;
