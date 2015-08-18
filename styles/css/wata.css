@@ -286,6 +286,9 @@ textarea:-webkit-autofill {
 #contact .modern-connect i {
   width: 1.2rem; }
 
+button[type="submit"]:hover {
+  cursor: pointer; }
+
 /***********************************************************************************************************************
 /*
 /* 7. Tabs / .tabs
@@ -479,6 +482,7 @@ blockquote {
     -moz-transition: background-color 0.2s linear 0.3s;
     transition: background-color 0.2s linear 0.3s; }
     .filter-options a.active {
+      color: white;
       background-color: #318be1; }
     @media only screen and (max-width: 600px) {
       .filter-options a {

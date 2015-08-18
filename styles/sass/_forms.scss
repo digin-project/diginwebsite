@@ -45,3 +45,7 @@ textarea:-webkit-autofill {
         width: 1.2rem;
     }
 }
+
+button[type="submit"]:hover {
+    cursor: pointer;
+}
