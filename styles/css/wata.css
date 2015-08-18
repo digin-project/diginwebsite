@@ -159,11 +159,10 @@ nav {
     padding: 1rem; }
   #ajax-box h1 {
     text-transform: uppercase;
-    letter-spacing: 5px; }
+    padding: 13px 0; }
     @media only screen and (max-width: 600px) {
       #ajax-box h1 {
-        font-size: 36px;
-        letter-spacing: 3px; } }
+        font-size: 36px; } }
 
 /***********************************************************************************************************************
 /*

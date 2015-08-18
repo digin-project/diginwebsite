@@ -37,11 +37,10 @@
 
     h1 {
         text-transform: uppercase;
-        letter-spacing: 5px;
+        padding: 13px 0;
 
         @media #{$small-and-down} {
             font-size: 36px;
-            letter-spacing: 3px;
         }
     }
 }

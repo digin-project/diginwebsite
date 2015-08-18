@@ -30,6 +30,38 @@ module.exports = function(grunt) {
                 }
             }
         },
+        copy : {
+            dist : {
+                files : [{
+                    expand : true,
+                    dot : true,
+                    cwd : "./",
+                    dest : "dist",
+                    src : [
+                        "index.html",
+                        "robots.txt",
+                        "styles/css/*css",
+                        "scripts/*.js",
+                        "php/*.php",
+                        "libs/**/*.*",
+                        "images/**/*.*",
+                        "favicons/**/*.*",
+                        "ajax/**/*.html"
+                    ]
+                }]
+            }
+        },
+        htmlmin : {
+            dist : {
+                options : {
+                    removeComments : true,
+                    collapseWhitespace: true
+                },
+                files : {
+                    './dist/index.html' : './dist/index.html'
+                }
+            }
+        },
         concat: {
             options: {
                 separator: ';'
@@ -56,9 +88,20 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
     // Default task(s).
     grunt.registerTask('default', ['sass:dist','cssmin', 'uglify', 'concat']);
     grunt.registerTask('build_lib', ['concat']);
+
+    grunt.registerTask('build', [
+        'sass:dist',
+        'cssmin',
+        'uglify',
+        'concat',
+        'copy:dist',
+        'htmlmin:dist'
+    ]);
 
 };
