@@ -78,7 +78,8 @@ nav {
     padding: 0 15px; }
   nav .brand-logo {
     font-weight: 300;
-    letter-spacing: -2px; }
+    letter-spacing: -2px;
+    padding: 5px 0 5px 15px; }
     nav .brand-logo .tighter {
       letter-spacing: -3px; }
   nav .side-nav {
