@@ -51,6 +51,6 @@ var Wata = {
     googleMaps: {
         lat: 44.8403734,
         lng: -0.5703114,
-        zoom: 7
+        zoom: 9
     }
 };
