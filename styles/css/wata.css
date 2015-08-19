@@ -51,7 +51,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: white; }
+  background-color: white;
+  display: none; }
   #not_chrome p.close {
     color: #318be1;
     text-transform: uppercase;
