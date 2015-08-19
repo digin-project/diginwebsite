@@ -56,7 +56,9 @@
   #not_chrome p.close {
     color: #318be1;
     text-transform: uppercase;
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: right;
+    font-size: 1.1rem; }
 
 /***********************************************************************************************************************
 /*
