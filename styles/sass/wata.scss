@@ -30,6 +30,17 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
+/** NO SCRIPT **/
+#noscript {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+}
 
 /***********************************************************************************************************************
 /*
