@@ -9,6 +9,12 @@
 
 'use strict';
 
+(function(){
+    var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+    if(!is_chrome) { $("#not_chrome").css("display","block"); }
+    $("#not_chrome .close").on("click", function(){ $(this).parent().css("display","none"); });
+})();
+
 (function() {
     var triangles = document.getElementById('triangles'),
         nav = document.getElementById('nav'),

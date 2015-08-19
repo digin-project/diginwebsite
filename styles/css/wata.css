@@ -40,7 +40,22 @@
   position: absolute;
   z-index: 999999;
   top: 0;
-  left: 0; }
+  left: 0;
+  right: 0; }
+
+/** CHROME DETECT **/
+#not_chrome {
+  width: 100%;
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; }
+  #not_chrome p.close {
+    color: #318be1;
+    text-transform: uppercase;
+    cursor: pointer; }
 
 /***********************************************************************************************************************
 /*
