@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                         "robots.txt",
                         "styles/css/*css",
                         "scripts/*.js",
-                        "php/*.php",
+                        "php/*.*",
                         "libs/**/*.*",
                         "images/**/*.*",
                         "favicons/**/*.*",
