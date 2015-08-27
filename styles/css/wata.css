@@ -116,7 +116,14 @@ nav {
     nav .brand-logo .tighter {
       letter-spacing: -3px; }
   nav .side-nav {
-    background-color: rgba(255, 255, 255, 0.95); }
+    background-color: white; }
+    nav .side-nav#mobile-menu {
+      padding-top: 50px; }
+      nav .side-nav#mobile-menu a {
+        color: #444;
+        font-size: 1.7rem; }
+        nav .side-nav#mobile-menu a.active {
+          color: #318be1; }
   nav .mdi-navigation-menu,
   nav .side-nav a {
     color: #318be1;
@@ -142,7 +149,7 @@ nav {
     padding-left: 10px; }
 
 #sidenav-overlay {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 /***********************************************************************************************************************
 /*

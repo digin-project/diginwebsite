@@ -2,3 +2,5 @@
 node_modules
 /dist
 php/config.php
+reglement/stripe_config.php
+vendor

@@ -18,7 +18,20 @@ nav {
     }
 
     .side-nav {
-        background-color: rgba(255, 255, 255, .95);
+        background-color: rgba(255, 255, 255, 1);
+
+        &#mobile-menu {
+            padding-top: 50px;
+
+            a {
+                color: #444;
+                font-size: 1.7rem;
+
+                &.active {
+                    color: #318be1;
+                }
+            }
+        }
     }
 
     .mdi-navigation-menu,
@@ -61,5 +74,5 @@ nav {
 }
 
 #sidenav-overlay {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
 }
