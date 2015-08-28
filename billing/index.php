@@ -1,4 +1,7 @@
 <?php
+    header('Access-Control-Allow-Origin: https://digin.fr');
+    header('Access-Control-Allow-Origin: http://cdn.digin.fr');
+
     require_once "vendor/stripe/stripe-php/init.php";
     require_once "stripe_config.php";
 
@@ -19,7 +22,6 @@
             "description" => "Example charge")
         );
 
-        unset($_POST);
         $success = true;
         } catch(\Stripe\Error\Card $e) {
           // The card has been declined
@@ -50,17 +52,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <title>Digin - Interface de paiement sécurisée</title>
-        <link rel="icon" type="image/png" href="http://digin.fr/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+        <link rel="icon" type="image/png" href="/billing/images/favicon-32x32.png" sizes="32x32">
+        <link rel="stylesheet" href="/billing/css/main.css" media="screen" charset="utf-8">
     </head>
     <body>
         <div id="form-container">
 
             <?php if(!$success) { ?>
-            <a href="http://digin.fr" target="_blank"><img class="logo" src="http://cdn.digin.fr/digin/logo.png" /></a>
+            <a href="https://digin.fr" target="_blank"><img class="logo" src="/billing/images/logo.png" /></a>
             <div id="form-wrapper">
                 <form action="" method="POST" id="payment-form">
-                    <h1>Votre interface de paiement sécurisée avec <a href="https://stripe.com/fr" target="_blank"><img class="stripe-logo" src="http://cdn.digin.fr/digin/stripe.png" height="30" /></a><span class="copyright-icon">&copy;</span></h1>
+                    <h1>Votre interface de paiement sécurisée avec <a href="https://stripe.com/fr" target="_blank"><img class="stripe-logo" src="/billing/images/stripe.png" height="30" /></a><span class="copyright-icon">&copy;</span></h1>
                     <span class="payment-errors"></span>
 
                     <div class="form-row card">
@@ -82,7 +84,7 @@
                     <div class="form-row amount">
                         <label>
                             <span>Montant</span>
-                            <input type="text" autocomplete="false" spellcheck="false" name="stripeAmount" data-stripe="amount" value="<?php print ($get_amount) ?: $get_amount; ?>" placeholder="Montant (ex. 1999.99)" />
+                            <input type="text" autocomplete="false" spellcheck="false" required name="stripeAmount" data-stripe="amount" value="<?php print ($get_amount) ?: $get_amount; ?>" placeholder="Montant (ex. 1999.99)" />
                         </label>
                     </div>
 
@@ -96,7 +98,7 @@
 
                     <input type="hidden" name="paymentTime" value="<?php print time(); ?>" />
                     <button type="submit">Valider le paiement</button>
-                    <img src="http://cdn.digin.fr/digin/payment.png" height="40" />
+                    <img src="/billing/images/payment.png" height="40" />
 
                     <p class="copyright"><?php echo date("Y"); ?> &copy; Digin - <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
                 </form>
@@ -104,13 +106,16 @@
             </div>
 
             <?php } else { ?>
-                <a href="http://digin.fr" target="_blank"><img class="logo" src="http://cdn.digin.fr/digin/logo.png" /></a>
+                <a href="http://digin.fr" target="_blank"><img class="logo" src="/billing/images/logo.png" /></a>
                 <div id="form-wrapper">
                     <div id="payment-form">
-                        <p>Merci pour votre règlement, pour toute question adressez vous à <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
+                        <p>Merci pour votre règlement de
+                            <?php print $_POST['stripeAmount']; print ($_POST['stripeCurrency'] == "eur") ? "&euro;" : "&#36;" ?>
+                            , pour toute question adressez vous à <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
                         <p class="copyright"><?php echo date("Y"); ?> &copy; Digin - <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
                     </div>
                 </div>
+                <?php unset($_POST); ?>
             <?php } ?>
 
         </div>
@@ -118,6 +123,6 @@
         <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
         <script type="text/javascript">Stripe.setPublishableKey("<?php print API_KEY; ?>");</script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="/billing/js/app.js"></script>
     </body>
 </html>

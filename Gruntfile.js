@@ -47,8 +47,8 @@ module.exports = function(grunt) {
                         "images/**/*.*",
                         "favicons/**/*.*",
                         "ajax/**/*.html",
-                        "reglement/**/*.*",
-                        "reglement/vendor/stripe/**/*.*"
+                        "billing/**/*.*",
+                        "billing/vendor/stripe/**/*.*"
                     ]
                 }]
             }

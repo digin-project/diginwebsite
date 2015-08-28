@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /billing/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([0-9]+)\/([eur|cad]*)$ index.php?amount=$1&currency=$2 [L]
