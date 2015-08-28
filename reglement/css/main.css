@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #318be1;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    font-family: "Roboto", arial, sans-serif;
+    background-color: #fafafa;
+    background: url("https://unsplash.it/1800/900/?random") center center no-repeat;
+    background-size: cover;
+}
+/**
+ * CSS3 Loader
+ */
+.spinner-container {
+    display: none;
+    padding: 100px;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #318be1;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+     -webkit-transform: scale(1.0);
+     opacity: 0;
+    }
+}
+@keyframes sk-scaleout {
+    0% {
+     -webkit-transform: scale(0);
+     transform: scale(0);
+    } 100% {
+     -webkit-transform: scale(1.0);
+     transform: scale(1.0);
+     opacity: 0;
+    }
+}
+#form-container::-webkit-scrollbar {
+    width: 0;
+}
+#form-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#form-container::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+#form-container {
+    width: 100%;
+    max-width: 420px;
+    height: 530px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    overflow: auto;
+    max-height: 100%;
+}
+#form-container img.logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 160px;
+}
+#form-wrapper {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px 0px rgba(0,0,0,.1);
+}
+#payment-form {
+    width: 100%;
+    padding: 30px;
+}
+#payment-form h1 {
+    margin-top: 0;
+    color: #444;
+    font-size: 26px;
+}
+#payment-form button[type="submit"] {
+    background: #318be1;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 200ms ease-out;
+}
+#payment-form button[type="submit"]:hover {
+    background-color: #2A73B9;
+}
+#payment-form button[disabled] {
+    background: #999;
+}
+#payment-form img {
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#payment-form img.stripe-logo {
+    vertical-align: middle;
+    margin-left: -3px;
+}
+.form-row {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.form-row input {
+    color: #444;
+    padding: 9px 12px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    transition: border-color 200ms ease-out;
+    -webkit-appearance: none;
+}
+.form-row input:focus {
+    border-color: #318be1;
+    outline: none;
+}
+.form-row.card input {
+    width: 75%;
+    float: left;
+}
+.form-row input[type="radio"] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 200ms ease-out;
+}
+.form-row input[type="radio"]:checked {
+    background-color: #318be1;
+}
+.form-row.card input:last-child {
+    width: 25%;
+    float: left;
+}
+.form-row.amount input {
+    width: calc(100% - 94px);
+}
+.form-row.amount label span {
+    margin-right: 30px;
+}
+.form-row.exp label span:first-child {
+    margin-right: 118px;
+}
+.copyright {
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+.copyright a {
+    text-decoration: none;
+    color: #318be1;
+}
+.copyright-icon {
+    font-size: 14px;
+    vertical-align: middle;
+}

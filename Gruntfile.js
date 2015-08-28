@@ -46,7 +46,9 @@ module.exports = function(grunt) {
                         "libs/**/*.*",
                         "images/**/*.*",
                         "favicons/**/*.*",
-                        "ajax/**/*.html"
+                        "ajax/**/*.html",
+                        "reglement/**/*.*",
+                        "reglement/vendor/stripe/**/*.*"
                     ]
                 }]
             }
