@@ -98,7 +98,7 @@
                     <button type="submit">Valider le paiement</button>
                     <img src="http://cdn.digin.fr/digin/payment.png" height="40" />
 
-                    <p class="copyright"><?php echo date("Y"); ?> &copy; Digin - <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></<p>
+                    <p class="copyright"><?php echo date("Y"); ?> &copy; Digin - <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
                 </form>
                 <div class="spinner-container"><div class="spinner"></div></div>
             </div>
@@ -108,7 +108,7 @@
                 <div id="form-wrapper">
                     <div id="payment-form">
                         <p>Merci pour votre règlement, pour toute question adressez vous à <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
-                        <p class="copyright"><?php echo date("Y"); ?> &copy; Digin - <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></<p>
+                        <p class="copyright"><?php echo date("Y"); ?> &copy; Digin - <a href="mailto:facturation@digin.fr">facturation@digin.fr</a></p>
                     </div>
                 </div>
             <?php } ?>
