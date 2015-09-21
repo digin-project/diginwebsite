@@ -114,39 +114,39 @@
             <div class="wide-container container">
                 <!-- Shuffle grid -->
                 <div id="shuffle-grid" class="row">
-                    <a href="ajax/works/trampolinepark.html" alt="Trampoline Park" title="Trampoline Park" id="trampolinepark" class="col s12 m6 l4 picture-item ajax-link" data-groups='["webmarketing"]'>
+                    <a href="/projet/trampolinepark" alt="Trampoline Park" title="Trampoline Park" id="trampolinepark" class="col s12 m6 l4 picture-item" data-groups='["webmarketing"]'>
                         <img src="http://cdn.digin.fr/digin/works/trampolinepark_cover.png" class="responsive-img" alt="Webmarketing pour Trampoline Park à Bordeaux">
                         <h5>Webmarketing Trampoline Park</h5>
                     </a>
-                    <a href="ajax/works/cnrs.html" id="cnrs" alt="CNRS" title="CNRS" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev"]'>
+                    <a href="/projet/cnrs" id="cnrs" alt="CNRS" title="CNRS" class="col s12 m6 l4 picture-item" data-groups='["dev"]'>
                         <img src="http://cdn.digin.fr/digin/works/cnrs.jpg" class="responsive-img" alt="client CNRS">
                         <h5>Webdesign CNRS</h5>
                     </a>
-                    <a href="ajax/works/paarkin.html" id="paarkin" alt="Paarkin" title="Paarkin" class="col s12 m6 l4 picture-item ajax-link" data-groups='["mobile"]'>
+                    <a href="/projet/paarkin" id="paarkin" alt="Paarkin" title="Paarkin" class="col s12 m6 l4 picture-item" data-groups='["mobile"]'>
                         <img src="http://cdn.digin.fr/digin/works/paarkin.png" class="responsive-img" alt="Conception et développement de l'application mobile Paarkin">
                         <h5>Application mobile Paarkin</h5>
                     </a>
-                    <a href="ajax/works/youkka.html" id="youkka" alt="Youkka" title="Youkka" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev"]'>
+                    <a href="/projet/youkka" id="youkka" alt="Youkka" title="Youkka" class="col s12 m6 l4 picture-item" data-groups='["dev"]'>
                         <img src="http://cdn.digin.fr/digin/works/youkka.jpg" class="responsive-img" alt="Site Internet du réseau social Youkka">
                         <h5>Réseau Social Youkka</h5>
                     </a>
-                    <a href="ajax/works/tourduhautmoulin.html" id="tourduhautmoulin" alt="Tour du Haut Moulin" title="Tour du Haut Moulin" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev","webmarketing"]'>
+                    <a href="/projet/tourduhautmoulin" id="tourduhautmoulin" alt="Tour du Haut Moulin" title="Tour du Haut Moulin" class="col s12 m6 l4 picture-item" data-groups='["dev","webmarketing"]'>
                         <img src="http://cdn.digin.fr/digin/works/tourduhautmoulin.jpg" class="responsive-img" alt="Création site Web e-commerce Prestashop Chateau Tour du Haut Moulin">
                         <h5>E-commerce Haut Moulin</h5>
                     </a>
-                    <a href="ajax/works/maiandra.html" id="maiandra" alt="Maiandra" title="Maiandra" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev","webmarketing"]'>
+                    <a href="/projet/maiandra" id="maiandra" alt="Maiandra" title="Maiandra" class="col s12 m6 l4 picture-item" data-groups='["dev","webmarketing"]'>
                         <img src="http://cdn.digin.fr/digin/works/maiandra.jpg" class="responsive-img" alt="Identité et communication Web pour Salon de coiffure Maïandra">
                         <h5>Identité Maïandra</h5>
                     </a>
-                    <a href="ajax/works/brosseau.html" id="brosseau" alt="Brosseau" title="Brosseau" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev","webmarketing"]'>
+                    <a href="/projet/brosseau" id="brosseau" alt="Brosseau" title="Brosseau" class="col s12 m6 l4 picture-item" data-groups='["dev","webmarketing"]'>
                         <img src="http://cdn.digin.fr/digin/works/brosseau2.png" class="responsive-img" alt="Site Web et référencement naturel (SEO)">
                         <h5>Référencement brosseau.ca</h5>
                     </a>
-                    <a href="ajax/works/gnubila.html" id="gnubila" alt="Gnubila" title="Gnubila" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev"]'>
+                    <a href="/projet/gnubila" id="gnubila" alt="Gnubila" title="Gnubila" class="col s12 m6 l4 picture-item" data-groups='["dev"]'>
                         <img src="http://cdn.digin.fr/digin/works/gnubila.jpg" class="responsive-img" alt="Site Web Gnubila">
                         <h5>Site Web gnubila.fr</h5>
                     </a>
-                    <a href="ajax/works/cfm.html" id="cfm" alt="CFM" title="CFM" class="col s12 m6 l4 picture-item ajax-link" data-groups='["dev","webmarketing"]'>
+                    <a href="/projet/cfm" id="cfm" alt="CFM" title="CFM" class="col s12 m6 l4 picture-item" data-groups='["dev","webmarketing"]'>
                         <img src="http://cdn.digin.fr/digin/works/cfm.jpg" class="responsive-img" alt="Site Web mobile et SEO pour le CFM">
                         <h5>Mobile & SEO cfm33.com</h5>
                     </a>
