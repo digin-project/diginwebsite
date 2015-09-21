@@ -1,11 +1,11 @@
 <?php require "fragments/head.php"; ?>
 <body style="overflow: auto;">
-<a class="btn-floating btn-large waves-effect waves-dark green accent-2" href="/">
+<a class="btn-floating btn-large waves-effect waves-dark green accent-2 float-project" href="/">
     <i class="mdi-navigation-close indigo-text text-darken-4"></i>
 </a>
 
 <div class="parallax-container" id="hero">
-    <div class="parallax"><img src="http://cdn.digin.fr/digin/lab/cover.jpg" width="1680" alt="Digin lab"></div>
+    <div class="full-bg" style="background-image : url('http://cdn.digin.fr/digin/lab/cover.jpg');"></div>
 </div>
 
 <article class="container">
