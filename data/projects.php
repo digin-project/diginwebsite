@@ -8,7 +8,10 @@ class Data {
             "client" => "Trampoline Park Bordeaux",
             "mission" => "Conseil et stratégie Webmarketing, référencement naturel, community management & formation Google Adwords",
             "text" => "Le lancement du site Web de Trampoline Park s'est fait suite à la mise en place d'une stratégie de Webmarketing que nous avons définie et mise en oeuvre 6 mois avant l'ouverture du Parc. Objectif atteint : La fédération d'une communauté active et engagée sur Facebook autour du concept Trampoline Park avec un positionnement solide sur Google.",
-            "img" => "/images/works/trampolinepark-detail/formation.jpg",
+            "img" => array(
+                "url" => "/images/works/trampolinepark-detail/formation.jpg",
+                "alt" => "Formation Google AdWords avancé"
+            ),
             "end_text" => "Dans une deuxième phase, nous avons accompagné Trampoline Park au travers d'une formation Google Adwords de niveau avancé.",
 
             "url" => "http://trampolinepark.fr/",
@@ -42,7 +45,22 @@ class Data {
             "url_text" => "Visitez cfm33.com",
             "facebook" => false,
             "facebook_text" => false
+        ),
+
+        "cnrs" => array(
+            "title" => "Design et Développement web sur mesure pour le CNRS",
+            "client" => "CNRS",
+            "mission" => "Design & développement Web extranet et intranet - JAVA Liferay",
+            "text" => "Dans le cadre de plusieurs projets notamment axés sur le croisement des données scientifiques nous sommes intervenus au niveau du design des portails Web pour rendre plus accessibles les systèmes d'information destinés à la fois aux institutionnels, aux personnels scientifiques et au grand public.Tout ceci au travers d'un design modernisé et adapté à un discours scientifique vulgarisé.",
+            "img" => array(
+                "url" => "/images/works/cnrs-detail/n4u-home-page.jpg",
+                "alt" => "Page d'accueil pour le projet Neugrid 4 U"
+            ),
+            "end_text" => false,
+            "url" => false,
+            "facebook" => false
         )
+
     );
 
     public static $__lab = array(

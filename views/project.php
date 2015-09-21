@@ -28,12 +28,12 @@
         <?php if($data["img"]) { ?>
         <div class="row">
             <div class="col s12 m10 offset-m1">
-                <img src="<?php print $data["img"]; ?>" alt="Formation Google AdWords avancé" class="responsive-img" data-caption="Formation Google AdWords avancé">
+                <img src="<?php print $data["img"]["url"]; ?>" alt="<?php print $data["img"]["alt"]; ?>" class="responsive-img">
             </div>
         </div>
         <?php } ?>
 
-
+        <?php if($data["end_text"]) { ?>
         <div class="row">
             <div class="col s12 m10 offset-m1">
                  <p class="flow-text">
@@ -41,6 +41,7 @@
                 </p>
             </div>
         </div>
+        <?php } ?>
 
         <div class="row">
 
