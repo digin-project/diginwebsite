@@ -6,7 +6,9 @@
     </a>
 
     <div class="parallax-container" id="hero">
-        <div class="parallax"><img src="http://cdn.digin.fr/digin/works/trampolinepark-detail/trampolinepark_cover.png" alt="Webmarketing pour Trampoline Park Bordeaux"></div>
+        <div class="parallax">
+            <img src="http://cdn.digin.fr/digin/works/trampolinepark-detail/trampolinepark_cover.png" alt="Webmarketing pour Trampoline Park Bordeaux">
+        </div>
     </div>
 
     <article class="container">

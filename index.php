@@ -1,6 +1,6 @@
 <?php
     require 'vendor/autoload.php';
-    require 'data/projects.php';
+    require 'data/class.data.php';
 
     $app = new \Slim\Slim(array(
         'templates.path' => './views'
