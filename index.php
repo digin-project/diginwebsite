@@ -15,6 +15,10 @@ $app->get('/lab', function() use ($app) {
     $app->render('lab.php');
 });
 
+$app->get('/mentions-legales', function() use ($app) {
+	$app->render('mentions-legales.php');
+});
+
 $app->get('/projet/:project', function($project) use ($app) {
     try {
         $data = Data::$__projects[$project];

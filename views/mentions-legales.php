@@ -1,0 +1,47 @@
+<?php require "fragments/head.php"; ?>
+<body style="overflow: auto;">
+<div class="container">
+    <a class="btn-floating btn-large waves-effect waves-dark green accent-2 float-project" href="/">
+        <i class="mdi-navigation-close indigo-text text-darken-4"></i>
+    </a>
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <h1>
+                <br>
+                Mentions Légales
+            </h1>
+            <p class="flow-text grey lighten-4 padding-text">
+                Mise à jour : 14 août 2015
+            </p>
+            <h3>Editeur du site</h3>
+            <p class="flow-text">
+                Digin SARL au capital de 6000€ enregristré au RCS de Bordeaux sous le SIRET 800 318 859 00017<br>
+                11 ter cours Journu Auber<br>
+                33300 Bordeaux, France<br>
+                Tél. : + 33 9 84 29 94 71<br>
+                http://digin.fr<br>
+            </p>
+            <h3>Responsable éditorial</h3>
+            <p class="flow-text">
+                David Lascombe<br>
+                11 ter cours Journu Auber<br>
+                33300 Bordeaux, France<br>
+                Tél. : + 33 9 84 29 94 71<br>
+                http://digin.fr<br>
+            </p>
+            <h3>Hébergeur</h3>
+            <p class="flow-text">
+                Planethoster<br>
+                4416 Louis B. Mayer<br>
+                Laval, Quebec, Canada
+            </p>
+            <div class="divider"></div>
+            <p class="flow-text">
+                Questions? Ecrivez-nous &mdash; <a href="mailto:mentionslegales@digin.fr">mentionslegales@digin.fr</a> | <i class="fa fa-phone"></i> + 33 9 84 29 94 71
+            </p>
+        </div>
+    </div>
+</div>
+<?php require "fragments/script.php"; ?>
+</body>
+</html>

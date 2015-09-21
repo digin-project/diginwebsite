@@ -316,7 +316,7 @@
         <footer class="page-footer">
             <div class="footer-copyright">
                 <div class="container">
-                    © 2015 Digin | <a href="ajax/pages/mentions-legales.html" id="mentions-legales" alt="Mentions légales" title="Mentions légales">Mentions légales</a>
+                    © 2015 Digin | <a href="mentions-legales" id="mentions-legales" alt="Mentions légales" title="Mentions légales">Mentions légales</a>
                 </div>
             </div>
         </footer>
