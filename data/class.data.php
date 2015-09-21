@@ -4,6 +4,7 @@ class Data {
 
     public static $__projects = array(
         "trampolinepark" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/trampolinepark-detail/trampolinepark_cover.png",
             "title" => "Webmarketing pour Trampoline Park",
             "client" => "Trampoline Park Bordeaux",
             "mission" => "Conseil et stratégie Webmarketing, référencement naturel, community management & formation Google Adwords",
@@ -21,6 +22,7 @@ class Data {
         ),
 
         "brosseau" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/brosseau.png",
             "title" => "Brosseau.ca : Audio, Vidéo & Domotique",
             "client" => "Brosseau",
             "mission" => "Site Internet bilingue, référencement naturel (SEO), référencement sponsorisé avec Google AdWords (SEA)",
@@ -35,6 +37,7 @@ class Data {
         ),
 
         "cfm" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/cfm-detail/cfm_header.jpg",
             "title" => "CFM : site mobile et référencement",
             "client" => "CFM",
             "mission" => "Site Internet mobile, référencement naturel (SEO)",
@@ -48,6 +51,7 @@ class Data {
         ),
 
         "cnrs" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/cnrs-detail/cnrs.jpg",
             "title" => "Design et Développement web sur mesure pour le CNRS",
             "client" => "CNRS",
             "mission" => "Design & développement Web extranet et intranet - JAVA Liferay",
@@ -62,6 +66,7 @@ class Data {
         ),
 
         "gnubila" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/gnubila-detail/gnubila.jpg",
             "title" => "Site Web de gnubila.fr",
             "client" => "Gnubila",
             "mission" => "Design & intégration web sur plateforme Liferay",
@@ -77,6 +82,7 @@ class Data {
         ),
 
         "maiandra" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/maiandra-detail/maiandra.jpeg",
             "title" => "Salon de coiffure & relooking MaÏandra",
             "client" => "Salon Maïandra",
             "mission" => "Refonte d'identité, conseil, logo, charte graphique, recherche de nom, site Web",
@@ -93,6 +99,7 @@ class Data {
         ),
 
         "paarkin" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/paarkin-detail/header_flyer_paarkin.jpg",
             "isPaarkin" => true,
             "title" => "Création de l'application mobile Paarkin",
             "client" => "Digin",
@@ -106,6 +113,7 @@ class Data {
         ),
 
         "tourduhautmoulin" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/tourduhautmoulin-detail/vigne-tour-du-haut-moulin.jpg",
             "title" => "Site Web vente en ligne Chateau Tour du Haut Moulin",
             "client" => "Chateau Tour du Haut Moulin",
             "mission" => "Webdesign, photo, intégration et développement Web site e-commerce",
@@ -119,6 +127,7 @@ class Data {
         ),
 
         "youkka" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/youkka-detail/youkka.jpg",
             "title" => "Youkka - Réseau social de tennis",
             "client" => "Youkka",
             "mission" => "Design & développement web sur mesure",
@@ -134,12 +143,6 @@ class Data {
             "facebook_text" => "Suivez youkka sur facebook :"
         )
 
-    );
-
-    public static $__lab = array(
-        "paarkin" => array(
-
-        )
     );
 
 }
