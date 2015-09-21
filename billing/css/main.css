@@ -118,6 +118,7 @@ html, body {
     margin-bottom: 20px;
 }
 .form-row input {
+    font-size: 14px;
     color: #444;
     padding: 9px 12px;
     outline: none;
@@ -125,14 +126,19 @@ html, body {
     border-radius: 3px;
     transition: border-color 200ms ease-out;
     -webkit-appearance: none;
+    text-align: center;
 }
 .form-row input:focus {
     border-color: #318be1;
     outline: none;
 }
 .form-row.card input {
-    width: 75%;
+    width: 70%;
     float: left;
+}
+.form-row.card input[name="paymentCard"],
+.form-row.card input[name="paymentCVC"] {
+    text-align: center;
 }
 .form-row input[type="radio"] {
     border-radius: 50%;
@@ -148,16 +154,18 @@ html, body {
 }
 .form-row.card input:last-child {
     width: 25%;
+    margin-left: 5%;
     float: left;
 }
 .form-row.amount input {
-    width: calc(100% - 94px);
+    width: calc(65% - 94px);
+    margin-left: 35%;
 }
 .form-row.amount label span {
     margin-right: 30px;
 }
 .form-row.exp label span:first-child {
-    margin-right: 118px;
+    margin-right: 116px;
 }
 .copyright {
     margin-bottom: 0;

@@ -54,6 +54,18 @@
         <title>Digin - Interface de paiement sécurisée</title>
         <link rel="icon" type="image/png" href="/billing/images/favicon-32x32.png" sizes="32x32">
         <link rel="stylesheet" href="/billing/css/main.css" media="screen" charset="utf-8">
+        <style media="screen and (max-width: 500px)">
+            html, body { background: #fafafa; padding-top: 30px; }
+            #payment-form h1 { font-size: 22px; }
+            #payment-form img.stripe-logo { height: 24px; }
+            .form-row.card input:last-child { width: 30%; margin-left: 0; }
+            .form-row.exp label span:first-child { display: block; margin-right: 0; margin-bottom: 10px; }
+            .form-row.amount input { width: calc(100% - 94px); margin-left: 0; }
+            #payment-form button[type="submit"] { width: 100%; margin-bottom: 20px; }
+            #payment-form img:not(.stripe-logo) { margin: 0; display: block; margin: 0 auto; }
+            #payment-form .separator { display: none; }
+            #payment-form input.exp { width: calc(50% - 2px); }
+        </style>
     </head>
     <body>
         <div id="form-container">
@@ -66,25 +78,22 @@
                     <span class="payment-errors"></span>
 
                     <div class="form-row card">
-                        <label>
-                            <input type="text" size="16" minlength="16" maxlength="16" required data-stripe="number" placeholder="Numéro de carte"/>
-                            <input type="text" size="3" minlength="3" maxlength="3" required data-stripe="cvc" placeholder="CVC"/>
-                        </label>
-
+                        <input type="text" size="19" minlength="19" maxlength="19" name="paymentCard" required data-stripe="number" placeholder="Numéro de carte"/>
+                        <input type="text" size="3" minlength="3" maxlength="3" name="paymentCVC" required data-stripe="cvc" placeholder="CVC"/>
                     </div>
                     <div class="form-row exp">
                         <label>
                             <span>Expiration</span>
-                            <input type="text" size="2" minlength="2" maxlength="2" required data-stripe="exp-month" placeholder="MM"/>
+                            <input type="text" size="2" minlength="2" maxlength="2" class="exp" required data-stripe="exp-month" placeholder="MM"/>
                         </label>
-                            <span> / </span>
-                            <input type="text" size="4" minlength="4" maxlength="4" required data-stripe="exp-year" placeholder="YYYY"/>
+                            <span class="separator"> / </span>
+                            <input type="text" size="4" minlength="4" maxlength="4" class="exp" required data-stripe="exp-year" placeholder="YYYY"/>
                     </div>
 
                     <div class="form-row amount">
                         <label>
                             <span>Montant</span>
-                            <input type="text" autocomplete="false" spellcheck="false" required name="stripeAmount" data-stripe="amount" value="<?php print ($get_amount) ?: $get_amount; ?>" placeholder="Montant (ex. 1999.99)" />
+                            <input type="text" autocomplete="false" spellcheck="false" required name="stripeAmount" data-stripe="amount" value="<?php print ($get_amount) ?: $get_amount; ?>" placeholder="ex. 1 999.99" />
                         </label>
                     </div>
 
