@@ -1,27 +1,28 @@
 <?php
-    require 'vendor/autoload.php';
-    require 'data/class.data.php';
 
-    $app = new \Slim\Slim(array(
-        'templates.path' => './views'
-    ));
+require 'vendor/autoload.php';
+require 'data/class.data.php';
 
-    $app->get('/', function () use ($app) {
-        $app->render('home.php');
-    });
+$app = new \Slim\Slim(array(
+    'templates.path' => './views'
+));
 
-    $app->get('/lab', function() use ($app) {
-        $app->render('lab.php');
-    });
+$app->get('/', function () use ($app) {
+    $app->render('home.php');
+});
 
-    $app->get('/projet/:project', function($project) use ($app) {
-        try {
-            $data = Data::$__projects[$project];
-            $app->render('project.php', $data);
-        } catch(Exception $e) {
-            echo $e;
-        }
-    });
+$app->get('/lab', function() use ($app) {
+    $app->render('lab.php');
+});
+
+$app->get('/projet/:project', function($project) use ($app) {
+    try {
+        $data = Data::$__projects[$project];
+        $app->render('project.php', $data);
+    } catch(Exception $e) {
+        echo $e;
+    }
+});
 
 
-    $app->run();
+$app->run();

@@ -6,9 +6,7 @@
     </a>
 
     <div class="parallax-container" id="hero">
-        <div class="parallax">
-            <img src="http://cdn.digin.fr/digin/works/trampolinepark-detail/trampolinepark_cover.png" alt="Webmarketing pour Trampoline Park Bordeaux">
-        </div>
+        <div class="full-bg" style="background-image : url(<?php print $data["cover"]; ?>);"></div>
     </div>
 
     <article class="container">

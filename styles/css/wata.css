@@ -366,6 +366,16 @@ a {
   a[role=button] {
     cursor: pointer; }
 
+.full-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .responsive-img {
   display: block;
   margin: 0 auto; }
