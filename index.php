@@ -41,5 +41,23 @@ $app->get('/projet/:project', function($project) use ($app) {
     }
 });
 
+/** Protected area **/
+
+$app->get('/private/login', function() use ($app) {
+    $app->render('login.php');
+});
+
+$app->post('/private/login', function() use ($app) {
+    $data = $app->request->post();
+    $user = \User::findByUsername($data["username"]);
+    if($user) {
+        $user = \User::findByPassword($data['password']);
+        if($user) {
+            $user->toJson();
+        }
+    } else {
+        echo "no exist";
+    }
+});
 
 $app->run();
