@@ -59,6 +59,63 @@ class Data {
             "end_text" => false,
             "url" => false,
             "facebook" => false
+        ),
+
+        "gnubila" => array(
+            "title" => "Site Web de gnubila.fr",
+            "client" => "Gnubila",
+            "mission" => "Design & intégration web sur plateforme Liferay",
+            "text" => "La plateforme Web française de Gnubila avait besoin d'être complètement renouvellée tout en respectant la charte graphique de la maison mère (gnubila.com). Résultat : un site entièrement en flat design avec intégration vidéo et totalement responsive (s'adapte automatiquement aux tablettes et mobile).",
+            "img" => array(
+                "url" => "/images/works/gnubila-detail/home-page-gnubila.jpg",
+                "alt" => "Page d'accueil de gnubila.fr"
+            ),
+            "end_text" => false,
+            "url" => "http://gnubila.fr",
+            "url_text" => "Visitez gnubila.fr",
+            "facebook" => false
+        ),
+
+        "maiandra" => array(
+            "title" => "Salon de coiffure & relooking MaÏandra",
+            "client" => "Salon Maïandra",
+            "mission" => "Refonte d'identité, conseil, logo, charte graphique, recherche de nom, site Web",
+            "text" => "Le salon de coiffure jadis nommée 'Hypnotic Hair Design' avait besoin d'une refonte complète de son identité. Nous sommes intervenu avec nos partenaires pour la refonte complète de la marque et des outils de communication, y compris la réalisation d'un site Web responsive avec scrolling horizontal.",
+            "img" => array(
+                "url" => "/images/works/maiandra-detail/home-page-maiandra.jpg",
+                "alt" => "Page d'accueil de esprit-maiandra.fr"
+            ),
+            "end_text" => false,
+            "url" => "http://esprit-maiandra.fr",
+            "url_text" => "Visitez esprit-maiandra.fr",
+            "facebook" => "https://www.facebook.com/pages/Ma%C3%AFandra/153311908209780",
+            "facebook_text" => "Suivez maïandra sur facebook :"
+        ),
+
+        "paarkin" => array(
+            "isPaarkin" => true,
+            "title" => "Création de l'application mobile Paarkin",
+            "client" => "Digin",
+            "mission" => "Conception, Design et Développement web mobile Android et iOS",
+            "text" => "On estime qu'en moyenne à chaque instant entre 10 et 30% de la circulation automobile urbaine est à la recherche d'une place de stationnement. C'est de la pollution, du temps perdu, une nuisance estimée à 1 milliard d'euro uniquement en France.",
+            "img" => array(
+                "url" => "/images/works/paarkin-detail/mockup_paarkin_nexus_iphone.jpg",
+                "alt" => "Mockup Paarkin sur Nexus 5 et iPhone 6"
+            ),
+            "end_text" => "Nous avons imaginé une solution qui permet aux utilisateurs de signaler les places de parking disponibles en un clin d'oeil, le tout sous la forme d'un jeu à grande échelle... Qu'est-ce qu'on y gagne ? Réponse à la rentrée... N'hésitez pas à suivre Paarkin sur les réseaux sociaux pour connaître la suite."
+        ),
+
+        "tourduhautmoulin" => array(
+            "title" => "Site Web vente en ligne Chateau Tour du Haut Moulin",
+            "client" => "Chateau Tour du Haut Moulin",
+            "mission" => "Webdesign, photo, intégration et développement Web site e-commerce",
+            "text" => "Le Château Tour du Haut Moulin est un Cru Bourgeois renommé du Médoc et il se spécialise dans la vente en direct, grâce à la vente en ligne ou par correspondance.",
+            "img" => false,
+            "end_text" => "Nous avons fait une refonte complète de leur site Web de vente en ligne avec une réorganisation du contenu, et la prise de photo professionnelles (pack shots et photos d'ambiance et de paysage). Résultat : un tout nouveau site e-commerce responsive pour mettre en valeur la qualité du vin produit par cette propriété qui reçoit régulièrement les éloges des experts.",
+            "url" => "http://tourduhautmoulin.com",
+            "url_text" => "Visitez tourduhautmoulin.com",
+            "facebook" => "https://www.facebook.com/ChateauTourDuHautMoulin",
+            "facebook_text" => "Suivez le Château sur facebook :"
         )
 
     );
