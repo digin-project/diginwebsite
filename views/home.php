@@ -205,10 +205,10 @@
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
                         <p class="flow-text center-align">
                             Peut-on être innovant sans être impertinent ?
-                            Nous remettons régulièrement en question les solutions existantes et expérimentons nos propres concepts d'application web et mobile au travers de notre <a href="ajax/pages/digin-lab.html" class="ajax-link" id="digin-lab" alt="Notre lab" title="Notre lab">lab</a>.
+                            Nous remettons régulièrement en question les solutions existantes et expérimentons nos propres concepts d'application web et mobile au travers de notre <a href="/lab" id="digin-lab" alt="Notre lab" title="Notre lab">lab</a>.
                         </p>
                         <p class="center-align">
-                            <a href="ajax/pages/digin-lab.html" id="digin-lab" alt="Notre lab" title="Notre lab" class="waves-effect waves-light btn-large green accent-2 indigo-text text-darken-4 ajax-link">
+                            <a href="/lab" id="digin-lab" alt="Notre lab" title="Notre lab" class="waves-effect waves-light btn-large green accent-2 indigo-text text-darken-4">
                                 <i class="fa fa-flask left"></i>Découvrir nos projets
                             </a>
                         </p>
@@ -316,7 +316,7 @@
         <footer class="page-footer">
             <div class="footer-copyright">
                 <div class="container">
-                    © 2015 Digin | <a href="ajax/pages/mentions-legales.html" id="mentions-legales" alt="Mentions légales" title="Mentions légales" class="ajax-link">Mentions légales</a>
+                    © 2015 Digin | <a href="ajax/pages/mentions-legales.html" id="mentions-legales" alt="Mentions légales" title="Mentions légales">Mentions légales</a>
                 </div>
             </div>
         </footer>

@@ -10,6 +10,10 @@
         $app->render('home.php');
     });
 
+    $app->get('/lab', function() use ($app) {
+        $app->render('lab.php');
+    });
+
     $app->get('/projet/:project', function($project) use ($app) {
         try {
             $data = Data::$__projects[$project];
