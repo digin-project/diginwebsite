@@ -4,3 +4,4 @@ node_modules
 php/config.php
 billing/stripe_config.php
 vendor
+config

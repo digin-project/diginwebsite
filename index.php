@@ -2,6 +2,8 @@
 
 require 'vendor/autoload.php';
 require 'data/class.data.php';
+require 'config/database.php';
+require 'models/user.model.php';
 
 $app = new \Slim\Slim(array(
     'templates.path' => './views'
@@ -17,6 +19,17 @@ $app->get('/lab', function() use ($app) {
 
 $app->get('/mentions-legales', function() use ($app) {
 	$app->render('mentions-legales.php');
+});
+
+$app->get('/test', function() {
+    // $book = new \User(array(
+    //     'username' => 'Sahara',
+    //     'password' => 'Clive Cussler'
+    // ));
+    // $book->save();
+    // echo $book->toJson();
+    $books = \User::all();
+    echo $books->toJson();
 });
 
 $app->get('/projet/:project', function($project) use ($app) {
