@@ -1,9 +1,12 @@
 <?php
+session_cache_limiter(false);
+session_start();
 
 require 'vendor/autoload.php';
 require 'data/class.data.php';
 require 'config/database.php';
 require 'models/user.model.php';
+require 'helpers/class.session.php';
 
 $app = new \Slim\Slim(array(
     'templates.path' => './views'
@@ -44,7 +47,11 @@ $app->get('/projet/:project', function($project) use ($app) {
 /** Protected area **/
 
 $app->get('/private/', function() use ($app) {
-    $app->render('private.php');
+    if(Session::hasUser()) {
+        $app->redirect('/private/login');
+    } else {
+        $app->render('private.php');
+    }
 });
 
 $app->get('/private/login', function() use ($app) {
@@ -55,10 +62,16 @@ $app->post('/private/login', function() use ($app) {
     $data = $app->request->post();
     $user = \User::findUser($data["username"], $data["password"]);
     if($user) {
+        Session::setUser($user);
         $app->redirect('/private/');
     } else {
         $app->render('login.php');
     }
+});
+
+$app->get('/private/logout', function() use ($app) {
+    Session::clearUser();
+    $app->redirect('/');
 });
 
 $app->run();
