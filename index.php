@@ -65,7 +65,8 @@ $app->post('/private/login', function() use ($app) {
         Session::setUser($user);
         $app->redirect('/private/');
     } else {
-        $app->render('login.php');
+        $app->flash('error', 'Problème lors de la connexion.');
+        $app->render('login.php', array('error' => 'Problème lors de la connexion.'));
     }
 });
 
