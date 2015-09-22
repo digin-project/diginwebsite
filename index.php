@@ -91,7 +91,7 @@ $app->post('/private/login', function() use ($app) {
 
 $app->get('/private/logout', function() use ($app) {
     Session::clearUser();
-    $app->redirect('/');
+    $app->redirect('/private/login');
 });
 
 $app->run();

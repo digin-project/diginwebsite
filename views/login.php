@@ -6,7 +6,7 @@
 				<h5>Connexion</h5>
 				<input type="text" placeholder="Username" name="username" />
 				<input type="password" placeholder="Mot de passe" name="password" />
-				<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+				<button class="btn waves-effect waves-light" type="submit" name="action">Connexion
 					<i class="material-icons right">send</i>
 				</button>
 			</form>
