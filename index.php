@@ -43,20 +43,21 @@ $app->get('/projet/:project', function($project) use ($app) {
 
 /** Protected area **/
 
+$app->get('/private/', function() use ($app) {
+    $app->render('private.php');
+});
+
 $app->get('/private/login', function() use ($app) {
     $app->render('login.php');
 });
 
 $app->post('/private/login', function() use ($app) {
     $data = $app->request->post();
-    $user = \User::findByUsername($data["username"]);
+    $user = \User::findUser($data["username"], $data["password"]);
     if($user) {
-        $user = \User::findByPassword($data['password']);
-        if($user) {
-            $user->toJson();
-        }
+        $app->redirect('/private/');
     } else {
-        echo "no exist";
+        $app->render('login.php');
     }
 });
 

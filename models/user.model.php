@@ -4,7 +4,7 @@ class User extends \Illuminate\Database\Eloquent\Model {
 	protected $table = 'users';
 	protected static $salt = "";
 
-	public static function makePassword($string) {
+	public static function generatePassword($string) {
 		return sha1($string . time() . md5(self::$salt));
 	}
 
@@ -13,11 +13,17 @@ class User extends \Illuminate\Database\Eloquent\Model {
 	}
 
 	public static function findByPassword($password) {
-		$password = self::makePassword($password);
+		$password = self::generatePassword($password);
 		return User::where('password', $password)->get();
 	}
 
 	public static function checkUserPassword($password) {
 
+	}
+
+	public static function findUser($username, $password) {
+		// $password = self::generatePassword($password);
+		$user = User::where("username", $username)->where("password", $password)->first();
+		return $user;
 	}
 }
