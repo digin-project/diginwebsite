@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 class User extends \Illuminate\Database\Eloquent\Model {
 	protected $table = 'users';
 	protected static $salt = "";
+	protected $fillable = array('username', 'password', 'role', 'last_activity');
 
 	public static function generatePassword($string) {
 		return sha1($string . time() . md5(self::$salt));

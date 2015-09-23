@@ -80,6 +80,7 @@ $app->post('/private/login', function() use ($app) {
     $user = \User::findUser($data["username"], $data["password"]);
     if($user) {
         Session::setUser($user);
+        $date = new DateTime();
         $app->redirect('/private/');
     } else {
         $app->flash('error', 'Problème lors de la connexion.');
