@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                     cwd : "./",
                     dest : "dist",
                     src : [
-                        "index.html",
+                        "index.php",
                         "robots.txt",
                         "styles/css/*css",
                         "scripts/*.js",
@@ -46,9 +46,15 @@ module.exports = function(grunt) {
                         "libs/**/*.*",
                         "images/**/*.*",
                         "favicons/**/*.*",
-                        "ajax/**/*.html",
                         "billing/**/*.*",
-                        "billing/vendor/stripe/**/*.*"
+                        "billing/vendor/stripe/**/*.*",
+                        "google2a558eec76c5ed83.html",
+                        "views/**/*.*",
+                        "vendor/**/*.*",
+                        "data/*.*",
+                        "helpers/*.*",
+                        "config/*.*",
+                        "models/*.*",
                     ]
                 }]
             }
@@ -60,7 +66,16 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files : {
-                    './dist/index.html' : './dist/index.html'
+                    './dist/views/home.php' : './dist/views/home.php',
+                    './dist/views/lab.php' : './dist/views/lab.php',
+                    './dist/views/login.php' : './dist/views/login.php',
+                    './dist/views/mentions-legales.php' : './dist/views/mentions-legales.php',
+                    './dist/views/private.php' : './dist/views/private.php',
+                    './dist/views/users.php' : './dist/views/users.php',
+                    './dist/views/fragments/head.php' : './dist/views/fragments/head.php',
+                    './dist/views/fragments/nav.php' : './dist/views/fragments/nav.php',
+                    './dist/views/fragments/nav.php' : './dist/views/fragments/nav.php',
+                    './dist/views/fragments/script.php' : './dist/views/fragments/script.php',
                 }
             }
         },
