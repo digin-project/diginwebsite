@@ -4,6 +4,7 @@
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="/private/">Home</a></li>
 			<li><a href="/private/users">Users</a></li>
+			<li><a href="/private/billing">Billing</a></li>
 			<li><a href="/private/logout">Logout</a></li>
 		</ul>
 	</div>
