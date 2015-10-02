@@ -154,6 +154,19 @@ class Data {
             "url" => "http://cabinet-petroussenko.com/",
             "url_text" => "Site visible ici : http://cabinet-petroussenko.com/",
             "facebook" => false
+        ),
+
+        "pharmasep" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/pharmasep-detail/cover.png",
+            "title" => "Nouveau site Web de Pharmasep",
+            "client" => "Pharmasep, Lyon",
+            "mission" => "Conseil et stratégie Webmarketing, webdesign et intégration Web",
+            "text" => "Pharmasep et spécialisé dans la fourniture de solutions sur mesure pour les industries de la pharmaceutique et la biotechnologie. Dans ces métiers les sites Internet sont généralement austère et peu invitant. L'objectif était de mettre en place un site clair et attractif présentant l'ensemble de leurs produits et leurs services. Nous avons accompagné Pharmasep dans la prise en main de leur site, ils peuvent ainsi gérer leur catalogue en tout autonomie.",
+            "img" => false,
+            "end_text" => false,
+            "url" => "http://pharmasep.fr/",
+            "url_text" => "Site visible ici : http://cabinet-petroussenko.com/",
+            "facebook" => false
         )
 
     );
