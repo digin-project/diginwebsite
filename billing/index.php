@@ -9,6 +9,7 @@
     $success = false;
     $get_amount = (isset($_GET["amount"])) ? $_GET["amount"] : false;
     $get_currency = (isset($_GET["currency"])) ? $_GET["currency"] : "cad";
+    $get_id = (isset($_GET["id"])) ? $_GET["id"] : "No id";
 
     \Stripe\Stripe::setApiKey(API_SECRET);
 
@@ -19,7 +20,7 @@
             "amount" => $_POST['stripeAmount'] * 100, // amount in cents, again
             "currency" => $_POST['stripeCurrency'],
             "source" => $token,
-            "description" => "Example charge")
+            "description" => $_POST["paymentId"])
         );
 
         $success = true;
@@ -106,6 +107,7 @@
                     </div>
 
                     <input type="hidden" name="paymentTime" value="<?php print time(); ?>" />
+                    <input type="hidden" name="paymentId" value="<?php print $get_id; ?>">
                     <button type="submit">Valider le paiement</button>
                     <img src="/billing/images/payment.png" height="40" />
 
