@@ -12,7 +12,7 @@
                     <input type="text" onkeyup="updateBilling(this, 'amount')" id="billing-amount" placeholder="Amount (default: empty)">
                 </div>
                 <div class="col l2">
-                    <input type="text" onkeyup="updateBilling(this, 'curency')" id="billing-curency" placeholder="Curency (default: cad)">
+                    <input type="text" onkeyup="updateBilling(this, 'currency')" id="billing-currency" placeholder="Curency (default: cad)">
                 </div>
                 <div class="col l2">
                     <input type="text" onkeyup="updateBilling(this, 'id')" id="billing-id" placeholder="ID (default: empty)">
@@ -31,7 +31,7 @@
     <script type="text/javascript">
         var bhost = document.getElementById("billing-host");
         var bamount = document.getElementById("billing-amount");
-        var bcurency = document.getElementById("billing-curency");
+        var bcurrency = document.getElementById("billing-currency");
         var bid = document.getElementById("billing-id");
         var bcreate = document.getElementById("billing-create");
         var burl = document.getElementById("billing-url");

@@ -72,7 +72,11 @@ $app->get('/private/users', function() use ($app) {
 /** Billing **/
 
 $app->get('/private/billing', function() use ($app) {
-    $app->render('billing.php');
+    if(!Session::hasUser()) {
+        $app->render('billing.php');
+    } else {
+        $app->redirect('/private/');
+    }
 });
 
 /** Login **/
