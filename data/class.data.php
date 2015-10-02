@@ -141,6 +141,19 @@ class Data {
             "url_text" => "Inscrivez-vous sur youkka.com",
             "facebook" => "https://www.facebook.com/pages/Youkka/1554646508123638",
             "facebook_text" => "Suivez youkka sur facebook :"
+        ),
+
+        "petroussenko" => array(
+            "cover" => "http://cdn.digin.fr/digin/works/petroussenko-detail/cover.png",
+            "title" => "Nouveau site Web pour le Cabinet d'Avocats Petroussenko",
+            "client" => "Cabinet Petroussenko, Paris",
+            "mission" => "Conseil et stratégie Webmarketing, référencement naturel, webdesign et intégration Web",
+            "text" => "Nous avons accompagné le cabinet dans la mise en place de leur nouveau site Web en 3 langues et dans stratégie de positionnement du Google. Leurs clients peuvent désormais suivre leur dossier en ligne directement sur le site du cabinet grâce à un accès sécurisé.",
+            "img" => false,
+            "end_text" => false,
+            "url" => "http://cabinet-petroussenko.com/",
+            "url_text" => "Site visible ici : http://cabinet-petroussenko.com/",
+            "facebook" => false
         )
 
     );
