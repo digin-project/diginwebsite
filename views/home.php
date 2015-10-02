@@ -114,6 +114,14 @@
             <div class="wide-container container">
                 <!-- Shuffle grid -->
                 <div id="shuffle-grid" class="row">
+                    <a href="/projet/petroussenko" alt="Cabinet Petroussenko" title="Cabinet Petroussenko" id="petroussenko" class="col s12 m6 l4 picture-item" data-groups='["webmarketing","dev"]'>
+                        <img src="http://cdn.digin.fr/digin/works/petroussenko.jpg" class="responsive-img" alt="Nouveau site Web pour le Cabinet d'Avocats Petroussenko">
+                        <h5>Cabinet Petroussenko</h5>
+                    </a>
+                    <a href="/projet/pharmasep" alt="Pharmasep" title="Pharmasep" id="pharmasep" class="col s12 m6 l4 picture-item" data-groups='["dev","webdesign"]'>
+                        <img src="http://cdn.digin.fr/digin/works/pharmasep.png" class="responsive-img" alt="Conseil et stratégie Webmarketing, webdesign et intégration Web">
+                        <h5>Pharmasep</h5>
+                    </a>
                     <a href="/projet/trampolinepark" alt="Trampoline Park" title="Trampoline Park" id="trampolinepark" class="col s12 m6 l4 picture-item" data-groups='["webmarketing"]'>
                         <img src="http://cdn.digin.fr/digin/works/trampolinepark_cover.png" class="responsive-img" alt="Webmarketing pour Trampoline Park à Bordeaux">
                         <h5>Webmarketing Trampoline Park</h5>
